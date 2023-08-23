@@ -39,7 +39,7 @@ if __name__ == '__main__':
     window.config(padx=20, pady=10)
 
     # Weight Label
-    weight_label = Label(text="Please enter your weight")
+    weight_label = Label(text="Please enter your weight (kg)")
     weight_label.config(pady=5)
     weight_label.pack()
 
@@ -48,7 +48,7 @@ if __name__ == '__main__':
     weight_entry.pack()
 
     # Height Label
-    height_label = Label(text="Please enter your height")
+    height_label = Label(text="Please enter your height (cm)")
     height_label.config(pady=5)
     height_label.pack()
 
