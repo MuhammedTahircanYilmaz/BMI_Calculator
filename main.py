@@ -2,12 +2,11 @@ from tkinter import *
 
 
 def calculate_bmi():
-    global height, weight, bmi
 
     height = height_entry.get()
     weight = weight_entry.get()
 
-    if len(height_entry.get()) == 0 or len(weight_entry.get()) == 0:
+    if height == "" or weight == "":
         results_label.config(text="please enter both weight and height")
     else:
         try:
@@ -32,9 +31,6 @@ def calculate_bmi():
 
 
 if __name__ == '__main__':
-    weight = 0
-    height = 0
-    bmi = 0
 
     # Window
     window = Tk()
